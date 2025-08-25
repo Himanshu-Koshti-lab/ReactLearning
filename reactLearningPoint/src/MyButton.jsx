@@ -3,6 +3,6 @@ import './App.css'
 
 export default function MyButton() {
   return (
-    <button>My Button</button>
+    <button className='avatarButton'> My Button</button>
   )
 }

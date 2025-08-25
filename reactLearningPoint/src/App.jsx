@@ -12,7 +12,7 @@ function App() {
       <br /><br />
       <MyButton />
       <br /><br />
-      <button>Hello</button>
+      <button className='avatarButton'>Hello</button>
     </div>
   )
 }
