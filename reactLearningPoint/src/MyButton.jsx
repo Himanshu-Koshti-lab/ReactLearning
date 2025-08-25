@@ -1,8 +1,11 @@
 import React, { use } from "react";
 import "./App.css";
+import { useState } from "react";
 
 export default function MyButton() {
   let name = "Himanshu Koshti";
+
+  const [clickCount, setClickCount] = useState(0);
 
   const user = {
     name: "Himanshu Koshti",
@@ -11,7 +14,8 @@ export default function MyButton() {
   };
 
   function showAlert() {
-    alert("You clicked me...");
+    setClickCount(clickCount + 1);
+    alert("You clicked me..." + clickCount);
   }
 
   return (
@@ -20,7 +24,7 @@ export default function MyButton() {
       <p>
         Experience is {user.exp} and age is {user.age}
       </p>
-      <button onClick={showAlert}>Dare Click me...</button>
+      <button onClick={showAlert}>Dare Click me... {clickCount}</button>
     </>
   );
 }
