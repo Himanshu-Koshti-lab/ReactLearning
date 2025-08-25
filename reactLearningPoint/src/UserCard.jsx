@@ -12,7 +12,11 @@ export default function UserCard() {
     ]
 
     const listItems = explist.map(title => 
-        <li key={title.skill}> {title.skill} with version {title.version}</li>
+        <li key={title.skill}
+        style={{
+            color: title.version > 18 ? 'green' : 'red'
+        }}
+        > {title.skill} with version {title.version}</li>
     )
 
   return (
