@@ -1,9 +1,18 @@
 import { useState } from 'react'
 
 import MyButton from './MyButton'
+import AdminCard from './AdminCard';
+import UserCard from './UserCard';
 
 function App() {
   const [count, setCount] = useState(0)
+  
+  let isAdmin = true;
+
+  let showCard = <UserCard />
+
+  if(isAdmin)
+    showCard = <AdminCard />
 
   return (
     <div className='card'>
@@ -12,7 +21,10 @@ function App() {
       <br /><br />
       <MyButton />
       <br /><br />
-      <button className='avatarButton'>Hello</button>
+      <button className='avatarButton'>Hello</button> 
+
+
+      {showCard}
     </div>
   )
 }
