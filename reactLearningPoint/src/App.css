@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -14,3 +14,9 @@
 .avatarButton{
   background-color: aquamarine;
 }
+*/
+.square{
+  background-color: bisque;
+  border-radius: 1px;
+  border: 1px solid black;
+} 
