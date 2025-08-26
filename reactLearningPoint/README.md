@@ -1,21 +1,12 @@
 # React + Vite
+🔄 पूरा Flow एक कहानी में:
 
-Notice that <MyButton /> starts with a capital letter. That’s how you know it’s a React component. React component names must always start with a capital letter, while HTML tags must be lowercase.
+Bank = खजाना घर बनाया गया।
 
+Village = गाँव जहाँ खजाना रखा गया और सब बच्चों को बाँटने के लिए Bank.Provider दिया गया।
 
+gold state = गाँव का actual खजाना (100 coins)।
 
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
+House = गाँव का बच्चा जिसने कहा "मुझे भी gold चाहिए।" उसने useContext(Bank) से सीधा gold निकाल लिया।
 
-
-function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
+हर House को props से कुछ नहीं मिला → सबने सीधा Bank से लिया।
