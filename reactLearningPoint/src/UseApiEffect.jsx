@@ -14,7 +14,7 @@ export default function UseApiEffect() {
     fetch("https://fakestoreapi.com/products") //API CALL
     .then(res => res.json()) //Raw Response into JSON
     .then(data => setRest(data)); //JSON to Rest Object
-  },[count])
+  },[count]) //Track count if change it try to call API again.
 
   return (
     <>
