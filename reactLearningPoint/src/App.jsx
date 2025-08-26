@@ -1,9 +1,9 @@
-import UseApiEffect from "./UseApiEffect";
+import GolduseContext from "./GolduseContext";
 
 function App() {
   return (
     <div className="card">
-      <UseApiEffect />
+      <GolduseContext />
     </div>
   );
 }
