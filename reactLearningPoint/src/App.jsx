@@ -1,12 +1,9 @@
-import { useState } from "react";
-import AdminCard from "./AdminCard";
-import UserCard from "./UserCard";
-import CardReduser from "./CardReduser";
+import UseApiEffect from "./UseApiEffect";
 
 function App() {
   return (
     <div className="card">
-      <CardReduser />
+      <UseApiEffect />
     </div>
   );
 }
