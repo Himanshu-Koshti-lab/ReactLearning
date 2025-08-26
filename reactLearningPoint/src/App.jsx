@@ -6,6 +6,7 @@ import UserCard from "./UserCard";
 import Game from "./tictactoe";
 import Square from "./tictactoe";
 import Board from "./tictactoe";
+import CardReduser from "./CardReduser";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,9 +41,12 @@ function App() {
       <MyButton count = {clickCount} functionPass={showAlert}/>
       <MyButton count = {clickCount} functionPass={showAlert}/>
       <br />
-      {showCard} */}
+      {showCard} 
+      <Board /> 
+      */}
 
-      <Board />
+<CardReduser />
+      
     </div>
   );
 }
