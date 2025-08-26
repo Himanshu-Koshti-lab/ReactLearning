@@ -7,7 +7,7 @@ export default function CardReduser() {
   return (
     <div>
       <h2>Count: {state.count}</h2>
-      <h2>Total Operation : {state.operationPerform}</h2>
+      <h2>Total Operations : {state.operationPerform}</h2>
       <button onClick={() => doOperation({ type: "add" })}>+</button>
       <button onClick={() => doOperation({ type: "sub" })}>-</button>
       <button onClick={() => doOperation({ type: "reset" })}>Reset</button>
