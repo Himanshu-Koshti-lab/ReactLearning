@@ -5,14 +5,16 @@ export default function GolduseContext() {
   return (
     <>
       <BankContextProvider>
-        <div>//Gold will share in all component
+        <div>
+          //Gold will share in all component
           <House />
           <House />
           <House />
           <Furniture />
         </div>
       </BankContextProvider>
-      <Furniture />//Not in this one
+      //Not in this one
+      <Furniture />
     </>
   );
 }
