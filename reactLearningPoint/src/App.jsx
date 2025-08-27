@@ -1,10 +1,10 @@
+import BankContextProvider from "./BankContext";
 import GolduseContext from "./GolduseContext";
-import UseHooks from "./UseHooks";
 
 function App() {
   return (
     <div className="card">
-      <UseHooks />
+        <GolduseContext />
     </div>
   );
 }
