@@ -1,65 +1,97 @@
+/* ===============================
+   CONTAINER (Card Wrapper)
+   =============================== */
 .cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  background-color: rgb(219, 240, 246);
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.2s ease;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  gap: 10px;                             /* spacing between cards */
+  background-color: rgb(219, 240, 246);  /* light blue container bg */
+  padding: 20px;                         /* padding inside wrapper */
+  border-radius: 10px;                   /* rounded corners */
+  transition: transform 0.2s ease;       /* smooth hover animation */
 }
 
-.cards:hover{
-  transform: scale(0.99);
+/* Scale down ALL cards slightly when container is hovered */
+.cards:hover .card {
+  transform: scale(0.95);   /* shrink */
+  opacity: 0.8;             /* dim */
 }
 
+/* ===============================
+   INDIVIDUAL CARD
+   =============================== */
 .card {
-  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2);
-  grid-template-rows: repeat(3);
-  background-color: rgb(250, 248, 245);
-  border-radius: 2em;
-  color: black;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-template-rows: auto auto 1fr;     /* flexible rows */
+  padding: 20px;                         
+  background-color: rgb(250, 248, 245); /* light beige */
+  border-radius: 2em;                   /* soft round corners */
+  color: black;                         
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease;     /* smooth scaling + shadow */
 }
 
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(197, 233, 255, 0.2);
+/* Hover effect on single card */
+.cards .card:hover {
+  transform: scale(1.02);  /* grow slightly */
+  opacity: 1;              /* reset opacity */
+  box-shadow: 0 8px 20px rgba(197, 233, 255, 0.2); /* highlight */
 }
 
+/* ===============================
+   IMAGE
+   =============================== */
 img {
   width: 80px;
   height: 100px;
 }
 
 .image {
-  grid-column: span 2 / span 2;
-  align-self: center;
-  justify-self: center;
+  grid-column: span 2;          /* take full width of card */
+  align-self: center;           /* vertical center */
+  justify-self: center;         /* horizontal center */
 }
 
+/* ===============================
+   TITLE
+   =============================== */
 .title {
-  grid-column: span 2 / span 2;
-  grid-row-start: 2;
+  grid-column: span 2;  /* full row */
+  grid-row: 2;          /* second row */
+  font-weight: 600;     /* bolder title */
+  text-align: center;   /* center text */
 }
 
+/* ===============================
+   PRICE
+   =============================== */
 .price {
-  grid-row-start: 3;
-  align-self: end;
+  grid-row: 3;          /* third row */
+  align-self: end;      /* stick to bottom */
+  font-weight: bold;
+  color: #333;          /* dark gray for contrast */
 }
 
+/* ===============================
+   BUTTON
+   =============================== */
 .moreInfo {
-  grid-row-start: 3;
-  align-self: end;
-  border-radius: 15px;
-  padding: 10px;
+  grid-row: 3;            /* stays at bottom */
+  justify-self: end;      /* align right side */
+  align-self: end;        
+  padding: 10px 15px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #fbd761;
+  border-radius: 15px;
+  background-color: #fbd761;  /* yellow CTA */
   cursor: pointer;
-  transition: border-color 0.25s;
-  border: transparent;
+  border: none;
+  transition: all 0.25s ease; /* smooth hover */
+}
+
+.moreInfo:hover {
+  background-color: #f9c846; /* slightly darker on hover */
 }
