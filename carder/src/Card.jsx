@@ -88,10 +88,10 @@ export default function Card() {
     <div className="cards">
       {products.map((product) => (
         <div className="card">
-          <img src={product.image} />
+          <img className="image" src={product.image} />
           <h3 className="title">{product.title}</h3>
           <h4 className="price">{product.price}</h4>
-          <button>More Info</button>
+          <button className="moreInfo">Buy</button>          
         </div>
       ))}
     </div>

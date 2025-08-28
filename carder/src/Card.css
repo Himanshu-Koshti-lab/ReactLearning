@@ -1,17 +1,15 @@
 .cards {
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
 }
 
 .card {
   padding: 20px;
-  width: 200px;
-  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: rgb(250, 248, 245);
   border-radius: 2em;
   color: black;
-  overflow-x: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -26,17 +24,32 @@ img {
   height: 100px;
 }
 
-button {
-  position: relative;
-  /* left:  calc(200px - 110px); */
-  bottom: 0;
-  border: solid 4px red;
-  border-radius: 8px;
-  padding: 0.6em 1.2em;
+.image {
+  grid-column: span 2 / span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.title {
+  grid-row-start: 2;
+}
+
+.price {
+  grid-row-start: 3;
+  align-self: end;
+
+}
+
+.moreInfo {
+  grid-row-start: 3;
+  align-self: end;
+  border-radius: 2px;
+  padding: 10px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #7fdcf8;
+  background-color: #fdeaac;
   cursor: pointer;
   transition: border-color 0.25s;
+  border: transparent;
 }
