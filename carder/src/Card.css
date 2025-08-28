@@ -1,12 +1,22 @@
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  background-color: rgb(219, 240, 246);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.cards:hover{
+  transform: scale(0.99);
 }
 
 .card {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(3);
   background-color: rgb(250, 248, 245);
   border-radius: 2em;
   color: black;
@@ -16,7 +26,7 @@
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(197, 233, 255, 0.2);
 }
 
 img {
@@ -31,24 +41,24 @@ img {
 }
 
 .title {
+  grid-column: span 2 / span 2;
   grid-row-start: 2;
 }
 
 .price {
   grid-row-start: 3;
   align-self: end;
-
 }
 
 .moreInfo {
   grid-row-start: 3;
   align-self: end;
-  border-radius: 2px;
+  border-radius: 15px;
   padding: 10px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #fdeaac;
+  background-color: #fbd761;
   cursor: pointer;
   transition: border-color 0.25s;
   border: transparent;
