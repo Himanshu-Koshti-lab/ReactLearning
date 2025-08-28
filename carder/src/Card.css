@@ -11,6 +11,13 @@
   transition: transform 0.2s ease;       /* smooth hover animation */
 }
 
+/* ✅ At screen width <= 768px, switch to row layout */
+@media (max-width: 850px) {
+  .cards {
+    grid-template-columns: 1fr;  /* one column → row-based stacking */
+  }
+}
+
 /* Scale down ALL cards slightly when container is hovered */
 .cards:hover .card {
   transform: scale(0.95);   /* shrink */
