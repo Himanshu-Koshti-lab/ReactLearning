@@ -1,4 +1,5 @@
 import "./App.css";
+import Banner from "./Banner";
 import Card from "./Card";
 
 const products = [
@@ -78,6 +79,7 @@ function App() {
           <Card product = {p}/>
         ))}
       </div>
+      <Banner />
     </>
   );
 }
