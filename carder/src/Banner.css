@@ -1,8 +1,7 @@
 .Banner {
-    background-color: aliceblue;
-    margin-top: 20px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
-    border: solid red;
-    height: 40vh;
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  height: 40vh;
+  background-color: #b2b1cf; /* light beige */
 }
