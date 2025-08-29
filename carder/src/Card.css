@@ -32,9 +32,9 @@
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
   grid-template-rows: auto auto 1fr;     /* flexible rows */
   padding: 20px;                         
-  background-color: rgb(250, 248, 245); /* light beige */
+  background-color: rgb(255, 153, 0); /* light beige */
   border-radius: 2em;                   /* soft round corners */
-  color: black;                         
+  color: rgb(255, 255, 255);                         
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
   transition: transform 0.3s ease, 
               box-shadow 0.3s ease;     /* smooth scaling + shadow */
@@ -59,6 +59,11 @@ img {
   grid-column: span 2;          /* take full width of card */
   align-self: center;           /* vertical center */
   justify-self: center;         /* horizontal center */
+  transition: transform 0.3s ease
+}
+
+.image:hover {
+  transform: scale(1.5);
 }
 
 /* ===============================
@@ -101,4 +106,9 @@ img {
 
 .moreInfo:hover {
   background-color: #f9c846; /* slightly darker on hover */
+}
+
+
+h1{
+  color: whitesmoke;
 }
