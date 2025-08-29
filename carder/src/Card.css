@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
   gap: 10px;                             /* spacing between cards */
-  background-color: rgb(219, 240, 246);  /* light blue container bg */
+  background-color: #98D2EB;  /* light blue container bg */
   padding: 20px;                         /* padding inside wrapper */
   border-radius: 10px;                   /* rounded corners */
   transition: transform 0.2s ease;       /* smooth hover animation */
@@ -32,9 +32,9 @@
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
   grid-template-rows: auto auto 1fr;     /* flexible rows */
   padding: 20px;                         
-  background-color: rgb(255, 153, 0); /* light beige */
+  background-color: #B2B1CF; /* light beige */
   border-radius: 2em;                   /* soft round corners */
-  color: rgb(255, 255, 255);                         
+  color: #102542;                         
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow */
   transition: transform 0.3s ease, 
               box-shadow 0.3s ease;     /* smooth scaling + shadow */
@@ -98,17 +98,17 @@ img {
   font-weight: 500;
   font-family: inherit;
   border-radius: 15px;
-  background-color: #fbd761;  /* yellow CTA */
+  background-color: #B6A39E;  /* yellow CTA */
   cursor: pointer;
   border: none;
   transition: all 0.25s ease; /* smooth hover */
 }
 
 .moreInfo:hover {
-  background-color: #f9c846; /* slightly darker on hover */
+  background-color: #948B89; /* slightly darker on hover */
 }
 
 
 h1{
-  color: whitesmoke;
+  color: #F87060;
 }
