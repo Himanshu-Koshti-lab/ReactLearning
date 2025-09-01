@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./Banner";
 import Card from "./Card";
+import TwoBanner from "./TwoBanner";
 
 const products = [
   {
@@ -79,7 +80,10 @@ function App() {
           <Card product = {p}/>
         ))}
       </div>
+      <br />
       <Banner />
+      <br />
+      <TwoBanner />
     </>
   );
 }
