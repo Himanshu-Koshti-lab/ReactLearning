@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./Banner";
 import Card from "./Card";
+import NetflixCarousel from "./NetflixCarousel";
 import TwoBanner from "./TwoBanner";
 
 const products = [
@@ -84,6 +85,8 @@ function App() {
       <Banner />
       <br />
       <TwoBanner />
+      <br />
+      <NetflixCarousel />
     </>
   );
 }
