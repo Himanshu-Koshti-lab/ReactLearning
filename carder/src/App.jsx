@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./Banner";
 import Card from "./Card";
+import Footer from "./Footer";
 import NetflixCarousel from "./NetflixCarousel";
 import TwoBanner from "./TwoBanner";
 
@@ -87,6 +88,8 @@ function App() {
       <TwoBanner />
       <br />
       <NetflixCarousel />
+      <br />
+      <Footer />
     </>
   );
 }
