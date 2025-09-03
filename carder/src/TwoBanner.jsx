@@ -41,7 +41,7 @@ export default function TwoBanner() {
   }, []);
 
   return (
-    <div className="banner" key={slides[current].id}>
+    <div className="banner cell-2" key={slides[current].id}>
       <img
         src={slides[current].img}
         alt={slides[current].title}

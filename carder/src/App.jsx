@@ -60,17 +60,18 @@ const products = [
     },
   },
   {
-    "id": 5,
-    "title": "Dragon Station Chain Bracelet",
-    "price": 69.5,
-    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    "category": "jewelery",
-    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
-    "rating": {
-      "rate": 4.6,
-      "count": 400
-    }
-  }
+    id: 5,
+    title: "Dragon Station Chain Bracelet",
+    price: 69.5,
+    description:
+      "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+    category: "jewelery",
+    image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+    rating: {
+      rate: 4.6,
+      count: 400,
+    },
+  },
 ];
 
 function App() {
@@ -79,17 +80,19 @@ function App() {
       <h1>Product Card</h1>
       <div className="cards">
         {products.map((p) => (
-          <Card product = {p}/>
+          <Card product={p} />
         ))}
       </div>
       <br />
-      <Banner />
-      <br />
-      <TwoBanner />
-      <br />
-      <NetflixCarousel />
-      <br />
-      <Footer />
+      <div className="container">
+        <Banner />
+        <br />
+        <TwoBanner />
+        <br />
+        <NetflixCarousel />
+        <br />
+      </div>
+      <Footer className="cell-4" />
     </>
   );
 }

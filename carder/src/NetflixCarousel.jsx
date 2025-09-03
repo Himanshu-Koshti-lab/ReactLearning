@@ -20,7 +20,7 @@ export default function NetflixCarousel() {
   };
 
   return (
-    <div className="carousel">
+    <div className="carousel cell-3">
       <div
         className="carousel-track"
         style={{ transform: `translateX(-${current * 100}%)` }}
